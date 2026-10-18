@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3e8ff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 90%;
+    max-width: 900px;
+    max-height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(70, 40, 110, 0.28);
+    background-color: #ffffff;
+
+}
+
+.branding {
+    flex: 1.4;
+}
+
+.authentication {
+    flex: 1;
+}
+
+.s-logo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 175px;
+    height: auto;
+}
+
+.branding-visual {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+
+}
+
+.branding-content {
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-60px);
+
+}
+
+.branding-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.branding-content h1 {
+    margin-bottom: 0;
+    margin-top: 2px;
+
+
+}
+
+
+.authentication {
+    padding: 32px;
+    min-width: 0;
+
+}
+
+.authentication h2 {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    color: #6833e8;
+    font-weight: 700;
+}
+
+.sp {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #77788f;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 13px;
+    height: 35px;
+    padding-left: 40px;
+    font-weight: 500;
+    color: #85849c;
+    padding-right: 40px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.login-form a {
+    display: block;
+    text-align: end;
+    text-decoration: none;
+    color: #6833e8;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6833e8;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* .divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #85859D;
+}
+
+.divider span:first-child {
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.divider span:nth-child(3) {
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.divider p:nth-child(2) {
+    padding: 0 10px;
+} */
+
+.authentication .s-para {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #77788f;
+    transition: color 0.3s ease;
+}
+
+.s-para a:first-child {
+    text-decoration: none;
+    font-weight: 600;
+    color: #6833e8;
+    transition: color 0.3s ease;
+
+}
+
+.input-wrapper-e {
+    position: relative;
+}
+
+.input-wrapper-e svg {
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    width: 18px;
+    color: #68749a;
+    font-weight: bold;
+}
+
+.input-wrapper-p {
+    position: relative;
+}
+
+.input-wrapper-p svg:first-child {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    width: 19px;
+    color: #68749a;
+}
+
+.input-wrapper-p svg:nth-child(3) {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    width: 21px;
+    color: #68749a;
+}
+
+/* .input-wrapper-p svg:nth-child(4){
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    width: 21px;
+    color: #68749a;
+ } */
+button:hover {
+    background-color: #4524cc;
+    cursor: pointer;
+
+}
+
+.login-form a:hover {
+    color: #4d20c9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.s-para a:first-child:hover {
+    color: #4d20c9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fname {
+    position: relative;
+}
+
+.fname .user {
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    width: 21px;
+    color: #68749a;
+}
+
+.authentication .s-logo {
+    display: none;
+}
+
+@media(max-width:600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: block;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .branding {
+        display: none;
+    }
+
+    .authentication {
+        max-height: 100%;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+
+    .authentication h1,
+    .p {
+        display: none;
+    }
+
+    .authentication .s-logo {
+        width: 100%;
+        display: block;
+        margin: 15px auto;
+        max-width: 150px;
+        height: auto;
+    }
+
+
+    .authentication h2 {
+        text-align: center;
+
+    }
+
+    .sp {
+        text-align: center;
+
+    }
+
+}
