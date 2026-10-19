@@ -20,14 +20,14 @@ body {
     max-width: 900px;
     max-height: 600px;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 6px 18px rgba(70, 40, 110, 0.28);
     background-color: #ffffff;
-
+    overflow: hidden;
 }
 
 .branding {
-    flex: 1.4 ;
+    flex: 1.4;
+
 }
 
 .authentication {
@@ -40,7 +40,7 @@ body {
     margin: 0 auto;
     max-width: 175px;
     height: auto;
-    
+
 
 }
 
@@ -73,37 +73,40 @@ body {
 .branding-content h1 {
     margin-bottom: 0;
     margin-top: 2px;
-    
+
 
 }
 
 
-.authentication{
+.authentication {
     padding: 32px;
     min-width: 0;
-    
+
 }
 
 .authentication h1 {
     text-align: center;
     margin-bottom: 10px;
-    color:#6833e8;
+    color: #6833e8;
     font-weight: 700;
 }
-.p{
+
+.p {
     text-align: center;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 400;
-    color:#77788f;
+    color: #77788f;
 }
-label{
-    display:block;
+
+label {
+    display: block;
     font-size: 1rem;
     margin-bottom: 5px;
     font-weight: 500;
 }
-input{
+
+input {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -111,30 +114,33 @@ input{
     height: 35px;
     padding-left: 40px;
     font-weight: 400;
-    color:#85849c;
+    color: #85849c;
     padding-right: 40px;
     transition: background-color 0.3s ease;
 }
-.login-form a{
+
+.login-form a {
     display: block;
     text-align: end;
     text-decoration: none;
-    color:#6833e8;
+    color: #6833e8;
     margin-bottom: 10px;
     font-weight: 600;
     transition: color 0.3s ease;
-    
+
 }
-button{
-width: 100%;
-height:35px;
-border:none;
-border-radius: 6px;
-background-color: #6833e8;
-color:#ffffff;
-font-weight: 600;
-margin-bottom: 10px;
+
+button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6833e8;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
+
 /* .divider{
     width:100%;
     display:flex;
@@ -153,24 +159,27 @@ margin-bottom: 10px;
 .divider p:nth-child(2){
    padding:0 10px;
 } */
-.authentication .para{
-    display:block;
+.authentication .para {
+    display: block;
     margin-top: 20px;
     text-align: center;
-    color:#77788f;
+    color: #77788f;
     transition: color 0.3s ease;
 }
-.para a:first-child{
+
+.para a:first-child {
     text-decoration: none;
     font-weight: 600;
-    color:#6833e8;
+    color: #6833e8;
     transition: color 0.3s ease;
-    
+
 }
-.input-wrapper-e{
-    position:relative;
+
+.input-wrapper-e {
+    position: relative;
 }
-.input-wrapper-e svg{
+
+.input-wrapper-e svg {
     position: absolute;
     top: 5px;
     left: 13px;
@@ -178,78 +187,109 @@ margin-bottom: 10px;
     color: #68749a;
     font-weight: bold;
 }
- 
- .input-wrapper-p{
+
+.input-wrapper-p {
     position: relative;
- }
- .input-wrapper-p svg:first-child{
+}
+
+.input-wrapper-p svg:first-child {
     position: absolute;
     top: 4px;
     left: 12px;
     width: 19px;
     color: #68749a;
- }
- .input-wrapper-p svg:nth-child(3){
+}
+
+.input-wrapper-p svg:nth-child(3) {
     position: absolute;
     top: 6px;
     right: 12px;
     width: 21px;
     color: #68749a;
- }
-  /* .input-wrapper-p svg:nth-child(4){
+}
+
+/* .input-wrapper-p svg:nth-child(4){
     position: absolute;
     top: 6px;
     right: 12px;
     width: 21px;
     color: #68749a;
  } */
-button:hover{
-    background-color:#4524cc;
+button:hover {
+    background-color: #4524cc;
     cursor: pointer;
-    
+
 }
-.login-form a:hover{
+
+.login-form a:hover {
     color: #4d20c9;
     text-decoration: underline;
     cursor: pointer;
 }
-.para a:first-child:hover{
-      color: #4d20c9;
+
+.para a:first-child:hover {
+    color: #4d20c9;
     text-decoration: underline;
     cursor: pointer;
 }
-@media(max-width:600px){
-    body{
-        margin:0;
+
+@media(max-width:600px) {
+    body {
+        margin: 0;
         padding: 0;
         min-height: 100vh;
-        display:block;
-        
-        
+        display: block;
+
+
     }
-    .main{
-    width: 100%;
-    height: 100vh;
-    max-width: none;
-    max-height:none;
-    margin: 0;
-    border-radius: 0;
-    display: flex;
-    flex-direction: column;
-    overflow:visible;
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
-    .branding{
+
+    .branding {
         max-height: 60%;
     }
-    .authentication{
+
+    .authentication {
         max-height: 50%;
-        padding:20px;
+        padding: 20px;
         background-color: #ffffff;
-}
-    .authentication h1, .p, label{
-        display:none;
     }
-    .authentication .para{
+
+    .authentication h1,
+    .p,
+    label {
+        display: none;
+    }
+
+    .authentication .para {
         margin-top: 2px;
+    }
+}
+
+@media (max-height:600px) and (orientation: landscape) {
+    .main {
+        height: auto;
+        max-height: none;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .branding {
+        max-height: none;
+    }
+
+    .authentication {
+        max-height: none;
     }
 }

@@ -28,6 +28,7 @@ body {
 
 .branding {
     flex: 1.4;
+
 }
 
 .authentication {
@@ -271,7 +272,7 @@ button:hover {
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .branding {
@@ -308,4 +309,23 @@ button:hover {
 
     }
 
+}
+
+@media (max-height:600px) and (orientation: landscape) {
+    .main {
+        height: auto;
+        max-height: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .branding {
+        max-height: none;
+
+    }
+
+    .authentication {
+        max-height: none;
+    }
 }
