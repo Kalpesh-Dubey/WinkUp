@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/landingpagebg.webp");
+    background-position: bottom right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100dvh;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
+
+.loginbtn {
+    padding: 5px 20px;
+    border-radius: 18px;
+    background-color: #6b2cf5;
+    color: white;
+
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+
+}
+
+.logo {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+}
+
+main {
+    width: 50%;
+    text-align: left;
+    padding: 50px;
+}
+
+main p:first-child {
+    color: #9250f0;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+main h1:nth-child(2) {
+    margin: 10px;
+    font-size: clamp(2rem, 3.5vw, 4rem);
+
+
+}
+
+main h1 span {
+    color: #7b35e8;
+}
+
+main p:nth-child(3) {
+    margin: 10px;
+    color: #62677a;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+
+}
+
+.btn a:first-child {
+    display: block;
+    width: 70%;
+    padding: 7px 10px;
+    background-color: #7b35e8;
+    border-radius: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+
+}
+
+.bg {
+    display: none;
+}
+
+.btn a:nth-child(2) {
+    display: block;
+    width: 70%;
+    padding: 7px 10px;
+    color: #7b35e8;
+    border-radius: 15px;
+    border: 1px solid #7b35e8;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px;
+    font-weight: 600;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+.btn a:first-child:hover {
+    background-color: #4524cc;
+    cursor: pointer;
+
+}
+
+.btn a:nth-child(2):hover {
+    color: #4524cc;
+    border-color: #4524cc;
+    cursor: pointer;
+}
+
+
+@media(min-width:1536px) {
+    main h1:nth-child(2) {
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
+
+}
+
+@media(max-width:1024px) and (min-width:601px) and (orientation: portrait) {
+    header {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+
+    main {
+        width: 100%;
+        text-align: center;
+        padding: 20px 50px;
+        margin-top: 45px;
+
+
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 107px;
+
+    }
+
+
+
+    main h1:nth-child(2) {
+
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+
+
+    main p:first-child,
+    main p:nth-child(3) {
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+
+    .btn a:first-child,
+    .btn a:last-child {
+        font-size: clamp(1rem, 2vw, 2rem);
+        margin: 10px;
+    }
+
+}
+
+@media (max-width:600px) {
+    body {
+        background-image: none;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+
+    }
+
+    .container {
+        width: 100%;
+        height: 100dvh;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container div {
+        max-height: 55%;
+        position: relative;
+    }
+
+    .container header {
+        position: absolute;
+        top: 1px;
+    }
+
+    .bg {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+    .container main {
+        max-height: 50%;
+    }
+
+    header {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+
+    main {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 107px;
+
+
+    }
+
+    main h1:nth-child(2) {
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+
+    .btn a:nth-child(2) {
+        margin: 12px;
+    }
+
+    .btn a:first-child {
+        margin: 4px;
+    }
+
+}
