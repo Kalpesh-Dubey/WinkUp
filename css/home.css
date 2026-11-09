@@ -71,6 +71,7 @@ main {
     min-height: 0;
     overflow-y: auto;
     scrollbar-width: none;
+    padding-bottom: 90px;
 }
 
 main::-webkit-scrollbar {
