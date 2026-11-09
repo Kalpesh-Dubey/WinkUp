@@ -1,0 +1,583 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+    margin-left: 0px;
+    gap: 50px;
+    margin-bottom: 2px;
+
+}
+
+.bellicon {
+    margin-top: 5px;
+    height: 28px;
+}
+
+.notificationicon {
+    position: relative;
+}
+
+.notificationicon span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    top: 8%;
+    right: 2px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+.stories {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px 15px 35px 15px;
+    gap: 15px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+.stories div {
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff9800, #e1306c, #833ab4);
+    flex: 0 0 70px;
+}
+
+.stories div:first-child {
+    background: none;
+    padding: 1px;
+    border: 3.2px solid #7138f5;
+    position: relative;
+}
+
+.stories img.story {
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.stories div span {
+    font-size: clamp(0.7em, 2.2vw, 1em);
+    font-weight: 600;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 6px;
+}
+
+.plussvg {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 44px;
+    bottom: 0%;
+    border: 1px solid #7138f5;
+    background-color: #7138f5;
+    border-radius: 50%;
+}
+
+
+.KnowingMind {
+    width: 100%;
+
+    padding: 0 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.KnowingMind img.profileImg {
+
+    height: 45px;
+    width: 45px;
+
+    border-radius: 50%;
+
+}
+
+.KnowingMind input {
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #e0e3eb;
+    color: #85899c;
+    font-size: clamp(1em, 2.5vw, 2em);
+    font-weight: 500;
+    flex: 1;
+    min-width: 0;
+
+}
+
+.KnowingMind img.imageicon {
+
+    height: 28px;
+
+}
+
+
+
+.KnowingMind button {
+    background-color: #7138f5;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 400;
+    border: none;
+    color: #ffffff;
+}
+
+.KnowingMind button:hover {
+    background-color: #8a45ed;
+    font-weight: 500;
+}
+
+.feed {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+
+}
+
+.post-card {
+    border-top: 1px solid #e0e3eb;
+    border-bottom: 1px solid #e0e3eb;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e6e7f0;
+    border-radius: 15px;
+}
+
+.post-header {
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+.userinfo h4 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.userinfo p {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.ellipsis {
+    position: absolute;
+    right: 2%;
+}
+
+.post-profilepic {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+}
+
+.postsimgs {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-action {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.post-action span {
+    text-align: center;
+}
+
+.save {
+    margin-left: auto;
+}
+
+.heart,
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.caption {
+    margin-bottom: 0;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    border-top: 1px solid #73778b;
+}
+
+.Navbar span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #dccbfa;
+    display: flex;
+    align-items: center;
+    font-size: 33px;
+    justify-content: center;
+
+}
+
+.suggested-accounts img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.navprofileimg {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navpc {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+@media(max-width:326px) {
+    .KnowingMind input {
+        padding: 15px 5px 15px 5px;
+    }
+}
+
+@media(max-width:1023px) and (min-width:426px) {
+
+    header {
+        padding: 10px 20px 2px 20px;
+
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+    }
+
+    .bellicon {
+        height: 30px;
+    }
+
+    .Navbar img {
+        height: 30px;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    body {
+        height: 100dvh;
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+        overflow: hidden;
+        background-color: #f8f8fc;
+
+    }
+
+    .layout {
+        display: grid;
+        /* grid-template-columns: minmax(200px, 260px) minmax(0, 1fr) minmax(220px, 280px); */
+        grid-template-rows: minmax(0, 1fr);
+        grid-template-columns: 1fr 2fr 1fr;
+        min-height: 0;
+    }
+
+    main {
+        overflow-y: auto;
+        min-height: 0;
+        min-width: 0;
+        scrollbar-width: none;
+    }
+
+    main::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .Navbar {
+        display: none;
+
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .navpc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+        margin: 0 20px;
+
+
+    }
+
+    .navcontent .button {
+        background-color: #7138f5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 20px;
+        width: 100%;
+        gap: 15px;
+        border-radius: 10px;
+        font-weight: 600;
+        border: none;
+        color: #ffffff;
+    }
+
+    .navcontent .button:hover {
+        background-color: #8a45ed;
+        cursor: pointer;
+    }
+
+    .navlinks {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 20px;
+        width: 100%;
+        gap: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+
+    }
+
+    .navbottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding: 20px 0;
+        margin: 0;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .navlinks:hover {
+        background-color: #eae4fd;
+        color: #7138f5;
+        font-weight: 600;
+    }
+
+    .navli {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+    }
+
+    .navpro h4 {
+        margin: 0;
+    }
+
+    .navpro a {
+        text-decoration: none;
+        /* font-weight: 500; */
+        color: black;
+    }
+
+    .navpro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+
+
+
+    .KnowingMind input {
+        font-size: clamp(0.8em, 2vw, 1.3em);
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        flex: 1;
+        gap: 5px;
+    }
+
+    .suggestions {
+        padding: 5px 20px;
+        background-color: #ffffff;
+        border: 1px solid #e6e7f0;
+        border-radius: 15px;
+    }
+
+    .spanmerge h4 {
+        margin: 0;
+
+    }
+
+    .spanmerge {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .suggested-accounts img {
+        flex-shrink: 0;
+    }
+
+    .suggested-accounts {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 0px;
+
+
+    }
+
+    .suggested-accounts button {
+        background-color: #eae4fd;
+        color: #7138f5;
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-weight: 600;
+        border: none;
+        margin-left: 2px;
+        flex-shrink: 0;
+        white-space: nowrap;
+
+
+    }
+
+    .suggested {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        padding-bottom: 10px;
+    }
+
+    .suggested h3 {
+        margin: 0;
+    }
+
+    .suggested a {
+        text-decoration: none;
+        color: #7138f5;
+        font-weight: 600;
+    }
+
+    .trending {
+        padding: 5px 20px;
+        background-color: #ffffff;
+        border: 1px solid #e6e7f0;
+        border-radius: 15px;
+
+    }
+
+    .trendingheader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+
+    }
+
+    .trendingheader h3 {
+        margin: 0;
+    }
+
+    .trendingheader a {
+        text-decoration: none;
+        color: #7138f5;
+        font-weight: 600;
+    }
+
+    .list span {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+
+    .list small {
+        /* font-weight: 500; */
+        font-size: 1em;
+        padding-left: 20px;
+    }
+
+    li {
+        padding-bottom: 5px;
+
+    }
+}
