@@ -12,7 +12,7 @@ The goal is to build a complete, responsive, and functional social media applica
 
 ## 🌐 Live Demo
 
-- **Live Website:** [Visit WinkUp](https://github.com/Kalpesh-Dubey/WinkUp)
+- **Live Website:** [Visit WinkUp](https://kalpesh-dubey.github.io/WinkUp/)
 - **GitHub Repository:** [View Source Code](https://github.com/Kalpesh-Dubey/WinkUp.git)
 
 ---
@@ -97,7 +97,6 @@ WinkUp follows a **mobile-first approach**, with the interface designed for diff
 - Mobile devices
 - Tablets
 - Desktop screens
-- Large screens
 
 The focus is on creating a consistent user experience across devices using responsive layouts, Flexbox, CSS Grid, and media queries.
 
