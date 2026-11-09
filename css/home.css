@@ -14,6 +14,10 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
 }
 
@@ -28,6 +32,12 @@ header {
     gap: 50px;
     margin-bottom: 2px;
 
+}
+
+.layout {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .bellicon {
@@ -57,6 +67,9 @@ header {
 
 main {
     width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
 }
 
 .stories {
@@ -120,7 +133,7 @@ main {
     border-radius: 50%;
 }
 
-
+/* 
 .KnowingMind {
     width: 100%;
 
@@ -175,7 +188,7 @@ main {
 .KnowingMind button:hover {
     background-color: #8a45ed;
     font-weight: 500;
-}
+} */
 
 .feed {
     width: 100%;
@@ -264,6 +277,13 @@ main {
     justify-content: space-evenly;
     padding: 15px 0;
     border-top: 1px solid #73778b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+
 }
 
 .Navbar span {
