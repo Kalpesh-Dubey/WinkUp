@@ -234,6 +234,7 @@ main::-webkit-scrollbar {
     width: 100%;
     z-index: 1000;
     background-color: white;
+    border-color: white;
 
 }
 
@@ -317,7 +318,6 @@ aside {
 
     .layout {
         display: grid;
-        /* grid-template-columns: minmax(200px, 260px) minmax(0, 1fr) minmax(220px, 280px); */
         grid-template-rows: minmax(0, 1fr);
         grid-template-columns: 1fr 2fr 1fr;
         min-height: 0;
@@ -417,8 +417,13 @@ aside {
 
     .navpro a {
         text-decoration: none;
-        /* font-weight: 500; */
+        font-weight: 500;
         color: black;
+    }
+
+    .navpro a:hover {
+        color: #7138F5;
+        cursor: pointer;
     }
 
     .navpro {
@@ -507,6 +512,11 @@ aside {
         font-weight: 600;
     }
 
+    .suggested-accounts button:hover {
+        color: white;
+        background-color: #7138F5;
+    }
+
     .trending {
         padding: 5px 20px;
         background-color: #ffffff;
@@ -542,7 +552,6 @@ aside {
     }
 
     .list small {
-        /* font-weight: 500; */
         font-size: 1em;
         padding-left: 20px;
     }
