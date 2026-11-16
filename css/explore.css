@@ -15,6 +15,32 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f8f8fc;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr);
+    overflow: hidden;
+}
+
+.pclayout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    min-height: 0;
+    overflow: hidden;
+}
+
+.secondcolumn {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.sticky {
+    min-width: 0;
+    padding: 10px 10px 0 10px;
 }
 
 .mobtabheader {
@@ -29,12 +55,7 @@ body {
     display: none;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: white;
-}
+
 
 .bellicon {
     margin-top: 5px;
@@ -97,11 +118,13 @@ body {
     justify-content: flex-start;
     padding: 0 10px 15px 10px;
     gap: 15px;
+
 }
 
 .ref {
     border: 1px solid #e6e7f0;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 20px;
     padding: 8px 10px;
     width: 100%;
     min-width: 0;
@@ -117,22 +140,23 @@ body {
 }
 
 main {
-    padding: 10px 10px;
-
-    padding-bottom: 90px;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    padding: 10px 10px 90px 10px;
     scrollbar-width: none;
-}
-
-.masonry {
-    columns: 2;
-    column-gap: 12px;
-
 }
 
 main::-webkit-scrollbar {
     display: none;
 }
 
+.masonry {
+    columns: 2;
+    column-gap: 12px;
+}
 
 .post-images {
     width: 100%;
@@ -204,11 +228,8 @@ main::-webkit-scrollbar {
 
 .moodpost {
     display: flex;
-    width: 100%;
-    padding: 0 10px 10px 10px;
-    justify-content: flex-start;
-    align-items: center;
     gap: 10px;
+    padding: 0 10px 12px 10px;
     overflow-x: auto;
     scrollbar-width: none;
 }
@@ -217,38 +238,22 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-
-.moodselection {
-    flex: 0 0 110px;
-    position: relative;
-}
-
-.moodselector {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-    height: 100%;
-}
-
-.moodselection span {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 7px;
+.mood {
+    flex: 0 0 auto;
+    padding: 8px 16px;
+    border: 1px solid #e6e7f0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 0.9em;
     font-weight: 500;
-    color: white;
-    z-index: 2;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-.overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    border-radius: 12px;
-
+.mood:hover {
+    background-color: #7138F5;
+    border-color: #7138F5;
+    color: #ffffff;
 }
 
 .navprofile {
@@ -315,41 +320,28 @@ aside {
     }
 
 
-    body {
-        height: 100dvh;
-        display: grid;
-        grid-template-rows: auto minmax(0, 1fr);
-        overflow: hidden;
+    @media (min-width: 1024px) {
+        body {
+            grid-template-rows: auto minmax(0, 1fr);
+        }
+
+        .pclayout {
+            grid-template-columns: minmax(200px, 250px) minmax(0, 1fr) minmax(250px, 300px);
+            gap: 20px;
+        }
+
+        main {
+            padding-bottom: 20px;
+        }
+
+        .masonry {
+            columns: 3;
+        }
+
+        /* .navbar, .mobtabheader, .navpc, aside wale
+       purane rules jaise the waise rakho */
     }
 
-    .pclayout {
-        display: grid;
-        grid-template-columns: minmax(200px, 250px) minmax(0, 1fr) minmax(250px, 300px);
-        gap: 20px;
-        grid-template-rows: minmax(0, 1fr);
-        overflow: hidden;
-        min-height: 0;
-    }
-
-    main {
-        padding-bottom: 20px;
-        overflow-y: auto;
-        min-height: 0;
-        min-width: 0;
-        scrollbar-width: none;
-        overflow-x: hidden;
-        overscroll-behavior: contain;
-    }
-
-    main::-webkit-scrollbar {
-        display: none;
-    }
-
-    .sticky {
-        position: static;
-        min-width: 0;
-        padding: 10px 10px 0 10px;
-    }
 
     .logo {
         width: 100%;
