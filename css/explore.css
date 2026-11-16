@@ -348,6 +348,7 @@ aside {
     .sticky {
         position: static;
         min-width: 0;
+        padding: 10px 10px 0 10px;
     }
 
     .logo {
